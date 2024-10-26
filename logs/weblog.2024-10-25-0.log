@@ -1,0 +1,25 @@
+[TraceId: ] 2024-10-25 15:48:58.289 [main] INFO  com.yun.weblog.web.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 17.0.7 on DESKTOP-370A6UE with PID 14320 (started by Admin in E:\IDEA-project\Weblog\weblog-springboot\weblog-web)
+[TraceId: ] 2024-10-25 15:48:58.290 [main] INFO  com.yun.weblog.web.WeblogWebApplicationTests - The following profiles are active: prod
+[TraceId: ] 2024-10-25 15:49:00.754 [main] INFO  com.yun.weblog.web.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 3.285 seconds (JVM running for 4.851)
+[TraceId: ] 2024-10-25 15:49:01.407 [main] INFO  com.yun.weblog.web.WeblogWebApplicationTests - 这是一行 Info 级别日志
+[TraceId: ] 2024-10-25 15:49:01.408 [main] WARN  com.yun.weblog.web.WeblogWebApplicationTests - 这是一行 Warn 级别日志
+[TraceId: ] 2024-10-25 15:49:01.409 [main] ERROR com.yun.weblog.web.WeblogWebApplicationTests - 这是一行 Error 级别日志
+[TraceId: ] 2024-10-25 15:49:01.409 [main] INFO  com.yun.weblog.web.WeblogWebApplicationTests - 这是一行带有占位符日志，作者：犬小哈
+[TraceId: ] 2024-10-25 15:49:56.089 [main] INFO  com.yun.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.7 on DESKTOP-370A6UE with PID 156 (E:\IDEA-project\Weblog\weblog-springboot\weblog-web\target\classes started by Admin in E:\IDEA-project\Weblog\weblog-springboot)
+[TraceId: ] 2024-10-25 15:49:56.094 [main] INFO  com.yun.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-10-25 15:49:57.260 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-10-25 15:49:57.270 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-10-25 15:49:57.270 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-10-25 15:49:57.354 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-10-25 15:49:57.354 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1203 ms
+[TraceId: ] 2024-10-25 15:49:57.814 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-10-25 15:49:57.825 [main] INFO  com.yun.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 2.388 seconds (JVM running for 3.161)
+[TraceId: ] 2024-10-25 15:50:11.692 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-10-25 15:50:11.693 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-10-25 15:50:11.694 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[TraceId: 0da86fe0-64f3-43de-b159-53f0ca12260c] 2024-10-25 15:50:11.817 [http-nio-8080-exec-2] INFO  com.yun.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"admin","sex":1,"age":null,"email":null}, 请求类: TestController, 请求方法: test =================================== 
+[TraceId: 0da86fe0-64f3-43de-b159-53f0ca12260c] 2024-10-25 15:50:11.831 [http-nio-8080-exec-2] INFO  com.yun.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 27ms, 出参: {"username":"admin","sex":1,"age":null,"email":null} =================================== 
+[TraceId: 0c2db6cc-d10e-4837-bde4-d38e718bd3a9] 2024-10-25 15:50:55.947 [http-nio-8080-exec-3] INFO  com.yun.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"admin","sex":1,"age":null,"email":null}, 请求类: TestController, 请求方法: test =================================== 
+[TraceId: 0c2db6cc-d10e-4837-bde4-d38e718bd3a9] 2024-10-25 15:50:55.948 [http-nio-8080-exec-3] INFO  com.yun.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 1ms, 出参: {"username":"admin","sex":1,"age":null,"email":null} =================================== 
+[TraceId: ec74c52c-3220-4076-add3-d811f6a58dbc] 2024-10-25 15:51:03.961 [http-nio-8080-exec-4] INFO  com.yun.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"admin","sex":1,"age":null,"email":null}, 请求类: TestController, 请求方法: test =================================== 
+[TraceId: ec74c52c-3220-4076-add3-d811f6a58dbc] 2024-10-25 15:51:03.963 [http-nio-8080-exec-4] INFO  com.yun.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 2ms, 出参: {"username":"admin","sex":1,"age":null,"email":null} =================================== 
