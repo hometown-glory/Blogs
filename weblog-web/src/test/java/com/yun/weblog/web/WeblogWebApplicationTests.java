@@ -34,17 +34,17 @@ public class WeblogWebApplicationTests {
         log.info("这是一行带有占位符日志，作者：{}", author);
     }
 
-    @Test
-    void insertTest() {
-        // 构建数据库实体类
-        UserDO userDO = UserDO.builder()
-                .username("犬小哈")
-                .password("123456")
-                .createTime(new Date())
-                .updateTime(new Date())
-                .isDeleted(false)
-                .build();
-
-        userMapper.insert(userDO);
-    }
+    //@Test
+    //void insertTest() {
+    //    // 构建数据库实体类
+    //    UserDO userDO = UserDO.builder()
+    //            .username("犬小哈")
+    //            .password("123456")
+    //            .createTime(new Date())
+    //            .updateTime(new Date())
+    //            .isDeleted(false)
+    //            .build();
+    //
+    //    userMapper.insert(userDO);
+    //}
 }
