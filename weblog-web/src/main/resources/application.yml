@@ -8,3 +8,9 @@ jwt:
   issuer: yun
   # 秘钥
   secret: 5G2456BTp2WYpvIguh/fFpEv8ngEi/uduZ1g0H5eMMkSRrpSiA0JrLJfH7ybXXqg/xX0iL+Yd890aY1rPKJcYw==
+  # token 过期时间（单位：分钟） 24*60
+  tokenExpireTime: 1440
+  # token 请求头中的 key 值
+  tokenHeaderKey: Authorization
+  # token 请求头中的 value 值前缀
+  tokenPrefix: Bearer
