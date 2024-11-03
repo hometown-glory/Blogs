@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * @author 云言月
  * 2024/10/25 16:00
- * @deprecated 响应参数工具类
+ * deprecated 响应参数工具类
  */
 @Data
 public class Response<T> implements Serializable {
@@ -23,7 +23,7 @@ public class Response<T> implements Serializable {
     private T data;
 
     // 构造方法
-    private Response() {
+    protected Response() {
     }
 
     private Response(boolean success) {

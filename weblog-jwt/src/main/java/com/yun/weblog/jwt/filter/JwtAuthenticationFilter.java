@@ -49,6 +49,8 @@ public class JwtAuthenticationFilter extends AbstractAuthenticationProcessingFil
         // 将用户名、密码封装到 Token 中
         UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken
                 = new UsernamePasswordAuthenticationToken(username, password);
+        System.out.println("生成的toke是:========="+usernamePasswordAuthenticationToken.getAuthorities());
         return getAuthenticationManager().authenticate(usernamePasswordAuthenticationToken);
+
     }
 }

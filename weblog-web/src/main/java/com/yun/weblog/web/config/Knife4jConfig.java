@@ -41,11 +41,11 @@ public class Knife4jConfig {
      */
     private ApiInfo buildApiInfo() {
         return new ApiInfoBuilder()
-                .title("Weblog 博客前台接口文档") // 标题
-                .description("Weblog 是一款由 Spring Boot + Vue 3.2 + Vite 4.3 开发的前后端分离博客。") // 描述
-                .termsOfServiceUrl("https://www.quanxiaoha.com/") // API 服务条款
-                .contact(new Contact("犬小哈", "https://www.quanxiaoha.com", "871361652@qq.com")) // 联系人
-                .version("1.0") // 版本号
+                .title("Weblog 博客前台接口文档")
+                .description("Weblog 是一款由 Spring Boot + Vue 3.2 + Vite 4.3 开发的前后端分离博客。")
+                .termsOfServiceUrl("https://www.quanxiaoha.com/")
+                .contact(new Contact("犬小哈", "https://www.quanxiaoha.com", "871361652@qq.com"))
+                .version("1.0")
                 .build();
     }
 }
