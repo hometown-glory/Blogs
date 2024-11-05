@@ -18,3 +18,15 @@ spring:
     user:
       name: admin
       password: 123456
+
+  #=================================================================
+  # minio
+  #=================================================================
+minio:
+  endpoint: http://localhost:9000
+  access-key: rXhupjkoSe6w201ruJHG
+  secret-key: qtZtHTJYhpBDs8HwQ2lMYFm2pqFwhgTe6MhaJraX
+  bucket-name: weblog
+#    access-key: rXhupjkoSe6w201ruJHG
+#    secret-key: qtZtHTJYhpBDs8HwQ2lMYFm2pqFwhgTe6MhaJraX
+#    bucket-name: weblog
