@@ -18,6 +18,7 @@
             <artifactId>weblog-common</artifactId>
         </dependency>
 
+
         <dependency>
             <groupId>com.yun</groupId>
             <artifactId>weblog-jwt</artifactId>

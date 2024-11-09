@@ -3,6 +3,7 @@ package com.yun.weblog.common.domain.mapper;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.yun.weblog.common.config.InsertBatchMapper;
+import com.yun.weblog.common.domain.dos.ArticleCategoryRelDO;
 import com.yun.weblog.common.domain.dos.ArticleTagRelDO;
 
 import java.util.List;
@@ -31,5 +32,26 @@ public interface ArticleTagRelMapper extends InsertBatchMapper<ArticleTagRelDO> 
     default List<ArticleTagRelDO> selectByArticleId(Long articleId) {
         return selectList(Wrappers.<ArticleTagRelDO>lambdaQuery()
                 .eq(ArticleTagRelDO::getArticleId, articleId));
+    }
+
+    /**
+     * 根据文章 ID 集合批量查询
+     * @param articleIds
+     * @return
+     */
+    default List<ArticleTagRelDO> selectByArticleIds(List<Long> articleIds) {
+        return selectList(Wrappers.<ArticleTagRelDO>lambdaQuery()
+                .in(ArticleTagRelDO::getArticleId, articleIds));
+    }
+
+    /**
+     * 根据标签 ID 查询
+     * @param tagId
+     * @return
+     */
+    default ArticleTagRelDO selectOneByTagId(Long tagId) {
+        return selectOne(Wrappers.<ArticleTagRelDO>lambdaQuery()
+                .eq(ArticleTagRelDO::getTagId, tagId)
+                .last("LIMIT 1"));
     }
 }
