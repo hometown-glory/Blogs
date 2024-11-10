@@ -1,6 +1,8 @@
 package com.yun.weblog.web.service;
 
+
 import com.yun.weblog.common.result.Response;
+import com.yun.weblog.web.model.vo.article.FindArticleDetailReqVO;
 import com.yun.weblog.web.model.vo.article.FindIndexArticlePageListReqVO;
 
 /**
@@ -15,4 +17,11 @@ public interface ArticleService {
      * @return
      */
     Response findArticlePageList(FindIndexArticlePageListReqVO findIndexArticlePageListReqVO);
+
+    /**
+     * 文章详情
+     * @param findArticleDetailReqVO
+     * @return
+     */
+    Response findArticleDetail(FindArticleDetailReqVO findArticleDetailReqVO);
 }

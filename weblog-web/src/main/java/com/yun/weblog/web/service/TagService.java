@@ -1,6 +1,7 @@
 package com.yun.weblog.web.service;
 
 import com.yun.weblog.common.result.Response;
+import com.yun.weblog.web.model.vo.tag.FindTagArticlePageListReqVO;
 
 /**
  * @author 云言月
@@ -12,4 +13,11 @@ public interface TagService {
      * @return
      */
     Response findTagList();
+
+    /**
+     * 查询标签下的文章分页数据
+     * @param findTagArticlePageListReqVO
+     * @return
+     */
+    Response findTagPageList(FindTagArticlePageListReqVO findTagArticlePageListReqVO);
 }
